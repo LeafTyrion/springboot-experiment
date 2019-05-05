@@ -15,13 +15,13 @@ public class UserRepository {
     private EntityManager em;
 
     public void addUserAddress() {
-        User user = new User("BO");
+        User user = new User("Tyrion");
         em.persist(user);
-        Address address1 = new Address("956");
+        Address address1 = new Address("123456");
         address1.setUser(user);
         em.persist(address1);
 
-        Address address2 = new Address("925");
+        Address address2 = new Address("654321");
         address2.setUser(user);
         em.persist(address2);
     }
